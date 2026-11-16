@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Agnes video",
+    "description": "Generates 4-12 second videos with Agnes AI's video models: the free agnes-video-2.5-flash (720P) by default, or the paid agnes-video-2.5 for higher resolutions. Adds the agent tools agnes_video_generate and agnes_video_status, which create the asynchronous task, wait for it, and save the MP4 under agnes-videos/ in the session workspace. Ask the agent for a video, or give it a video_id to follow up. Prompts and any publicly reachable reference media URLs are sent to apihub.agnes-ai.com together with the API key in this plugin's config, so calls fail until a key is set. The free tier is rate limited (about 20 requests per minute) and renders 720P only. Disable this plugin to remove both tools."
+  }
+}

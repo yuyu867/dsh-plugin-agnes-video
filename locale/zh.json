@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Agnes 视频生成",
+    "description": "用 Agnes AI 的视频模型生成 4–12 秒视频：默认使用免费的 agnes-video-2.5-flash（720P），需要更高分辨率时改用付费的 agnes-video-2.5。插件新增 agnes_video_generate 与 agnes_video_status 两个工具，负责创建异步任务、等待完成，并把 MP4 保存到会话工作区的 agnes-videos/ 目录。直接让 Agent 生成视频即可，也可以把 video_id 交给它继续查询。提示词和可公开访问的参考素材链接会连同插件配置里的 API Key 一起发送到 apihub.agnes-ai.com，未配置 Key 时调用会失败。免费额度约每分钟 20 次请求，且仅支持 720P。禁用该插件即移除这两个工具。"
+  }
+}

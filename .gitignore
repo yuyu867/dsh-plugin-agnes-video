@@ -1,0 +1,17 @@
+# Node
+node_modules/
+npm-debug.log*
+pnpm-debug.log*
+yarn-error.log*
+
+# Local secrets and outputs
+.env
+.env.*
+*.local.yml
+agnes-videos/
+
+# Editors and OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

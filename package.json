@@ -1,0 +1,42 @@
+{
+  "name": "dsh-plugin-agnes-video",
+  "version": "1.0.0",
+  "description": "DeepSeek Harness plugin: generate short videos with Agnes AI's free video model through two agent tools",
+  "type": "module",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "agnes-ai",
+    "video-generation",
+    "text-to-video"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuyu867/dsh-plugin-agnes-video.git"
+  },
+  "homepage": "https://github.com/yuyu867/dsh-plugin-agnes-video#readme",
+  "bugs": {
+    "url": "https://github.com/yuyu867/dsh-plugin-agnes-video/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test/offline.test.mjs"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" }
+  }
+}

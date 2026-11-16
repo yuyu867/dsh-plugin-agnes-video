@@ -1,0 +1,18 @@
+# Bundled patch for dsh-plugin-agnes-video.
+#
+# `apiKey` is intentionally empty in this repository. Provide the key in either:
+#   1. the profile patch layer (~/.dsh/profiles/<profile>/cordis.patch.yml) as an
+#      id-targeted override of this row — see README "Configure the API key", or
+#   2. the AGNES_API_KEY environment variable of the process that runs DSH.
+- insert:
+    - id: agnes-video
+      name: 'dsh-plugin-agnes-video'
+      config:
+        apiKey: ''
+        baseUrl: https://apihub.agnes-ai.com
+        model: agnes-video-2.5-flash
+        pollIntervalMs: 5000
+        maxWaitMs: 300000
+        retryDelayMs: 5000
+        downloadDir: agnes-videos
+        saveByDefault: true
